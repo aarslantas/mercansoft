@@ -1,14 +1,52 @@
 .nav{
 
+  flex: 0 0 55%;
 
   &__list{
    list-style: none;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  &__item{}
+  &__link{
 
-  &__link{}
+    transition: all 1s;
+    position: relative;
+
+
+    &::after{
+      content:"";
+      position: absolute;
+      left:0;
+      bottom:0;
+      width:0;
+      height: 2px;
+      background-color: #3dbe71;
+
+      transition: all .2s ease-in;
+    }
+
+
+    &:visited,
+    &:link {
+      font-size: .8rem;
+      color: #504b72 ;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: .5rem .8em;
+
+    }
+
+
+    &:hover,
+    &active{
+       &:after{
+         width: 100%;
+       }
+
+    }
+
+  }
 }

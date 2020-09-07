@@ -5,7 +5,10 @@
 
 body {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
   background-color: #C8D8CE; }
 
 .container {
@@ -16,11 +19,70 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.nav__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between; }
+.btn {
+  text-transform: uppercase;
+  padding: .8rem 2rem;
+  border-radius: 5rem;
+  background-color: #3dbe71;
+  color: #fff;
+  border: none;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  transition: all .3s ease-in-out; }
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: -4rem;
+    top: 0;
+    width: 4rem;
+    height: 3rem;
+    transform: skewX(-20deg);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all .3s ease-in-out; }
+  .btn:hover, .btn:active {
+    transform: scale(1.1); }
+    .btn:hover::before, .btn:active::before {
+      transform: translateX(12rem);
+      border: none; }
+
+.nav {
+  flex: 0 0 55%; }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
+  .nav__link {
+    transition: all 1s;
+    position: relative; }
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #3dbe71;
+      transition: all .2s ease-in; }
+    .nav__link:visited, .nav__link:link {
+      font-size: .8rem;
+      color: #504b72;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: .5rem .8em; }
+    .nav__link:hover:after, .nav__linkactive:after {
+      width: 100%; }
 
 .header {
+  height: 5rem;
+  padding: 4rem .5rem;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around;
+  align-items: center; }
+  .header__logo {
+    flex: 0 0 25%; }
