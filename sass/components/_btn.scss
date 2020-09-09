@@ -12,18 +12,21 @@
     overflow: hidden;
     outline: none;
 
-  transition : all .3s ease-in-out;
+    transition : all .3s ease-out;
 
   &::before{
     content: "";
     position: absolute;
-    left: -4rem;
-    top: 0;
-    width: 4rem;
-    height: 3rem;
-    transform: skewX(-20deg);
-    box-shadow: 2px 2px 10px rgba(255 , 255 , 255 , .2);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    opacity: 0;
+
     background-color: rgba(255 , 255 , 255 , .2);
+
 
 
     transition : all .3s ease-in-out;
@@ -32,15 +35,19 @@
 
   &:hover,
   &:active{
-    transform: scale(1.1);
+    transform: scaleX(1.1);
 
     &::before{
-      transform: translateX(12rem);
-      border:none;
+      transform: scale(12);
+      opacity: 1;
     }
   }
 
 
-
+  &--big{
+    padding: 1rem 3rem;
+    font-size: .9rem;
+    letter-spacing: 1px;
+  }
 
 }
