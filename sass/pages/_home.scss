@@ -3,7 +3,16 @@
   padding: 4rem 6rem 0 6rem;
 
   display: flex;
-
+  @keyframes anim-info {
+    from{
+      opacity: 0;
+      transform: scale(.75);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
   &__left{
     flex: 0 0 50%;
@@ -14,9 +23,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    animation: anim-info .2s ease-in;
+
+    
+
   }
 
   &__right{
+    animation: anim-info .2s ease-in;
+
     flex: 0 0 50%;
 
     display: flex;
@@ -196,6 +211,8 @@
   &__top{
     width: 70%;
     text-align: center;
+
+
   }
   &__bottom{
     width: 80%;
@@ -204,4 +221,35 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.sec-cards{
+  height: 55rem;
+  background-color: #edeeee;
+  padding: 4rem 5rem 2rem 5rem;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__cards{
+
+    flex: 0 0 90%;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.sec-comment{
+  height: 35rem;
+  background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4) ),url("../../imgs/comment7.jpg") ;
+  background-size: cover;
+  background-attachment: fixed;
 }

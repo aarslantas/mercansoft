@@ -1,6 +1,9 @@
 .btn{
+
+    padding: 1.25rem 3rem;
+    //height: 2.5rem;
+    //width: 6rem;
     text-transform: uppercase;
-    padding: .8rem 2rem;
     border-radius: 5rem;
     background-color:#3dbe71;
     color:#fff;
@@ -12,42 +15,58 @@
     overflow: hidden;
     outline: none;
 
-    transition : all .3s ease-out;
+    transition: all .2s ease-in;
 
-  &::before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    opacity: 0;
+    span{
+      position: absolute;
+      left: 50%;
+      top:50%;
 
-    background-color: rgba(255 , 255 , 255 , .2);
+      transform: translate(-50%,-50%);
+      opacity: 1;
+      transition: all .2s ease-in;
+
+      &:last-child{
+        top:100%;
+        transform: translate(-50%,0);
+        opacity: 0;
+      }
+    }
 
 
-
-    transition : all .3s ease-in-out;
-  }
 
 
   &:hover,
   &:active{
-    transform: scaleX(1.1);
+    background-color: #5db380;
 
-    &::before{
-      transform: scale(12);
-      opacity: 1;
+    span {
+      opacity: 0;
+
+      &:last-child{
+        top:50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+      }
+
     }
-  }
 
+
+  }
 
   &--big{
-    padding: 1rem 3rem;
+    padding: 1.5rem 7rem;
     font-size: .9rem;
-    letter-spacing: 1px;
   }
+
+  &--pink{
+    background-color: rgba(#ee4266,.7);
+  }
+
+  &--purple{
+    background-color: rgba(#540d6e, .7);
+  }
+
+
 
 }
