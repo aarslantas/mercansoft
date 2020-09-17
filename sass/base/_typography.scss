@@ -18,6 +18,11 @@
   color: #17015d ;
   font-size: 2rem;
 
+  &--white{
+    color:#fff;
+    text-shadow: 2px 2px rgba(#000,.4);
+  }
+
 }
 
 .t3{

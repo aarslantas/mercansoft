@@ -246,10 +246,62 @@
   }
 }
 
-
-.sec-comment{
+.sec-idea{
   height: 35rem;
-  background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4) ),url("../../imgs/comment7.jpg") ;
+
+
+  background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4 )), url("../../imgs/comment7.jpg") ;
   background-size: cover;
   background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    color:#fff;
+    letter-spacing: 2px;
+  }
+
+
+
+}
+
+.sec-comment{
+  height: 50rem;
+  padding: 4rem 5rem 4rem 5rem;
+
+  background-image:  linear-gradient(to bottom, rgba(61, 190, 113, 0.9), rgba(#a3ebb1, 0.7)), url("../../imgs/bg-comment.jpeg");
+ // background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4 )), url("../../imgs/comment7.jpg") ;
+ // background-size: cover;
+ // background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__top{
+    flex:0 0 20%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    text-align: center;
+
+  }
+  &__bottom{
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+
+
+
 }

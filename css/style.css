@@ -31,6 +31,9 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #17015d;
   font-size: 2rem; }
+  .t2--white {
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
 
 .t3 {
   color: #17015d;
@@ -83,8 +86,11 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
         opacity: 1; }
-  .btn--big {
+  .btn--middle {
     padding: 1.5rem 7rem;
+    font-size: .9rem; }
+  .btn--big {
+    padding: 2rem 8rem;
     font-size: .9rem; }
   .btn--pink {
     background-color: rgba(238, 66, 102, 0.7); }
@@ -189,6 +195,50 @@ body {
 
 .card--purple {
   background-image: linear-gradient(to right bottom, rgba(84, 13, 110, 0.8), rgba(83, 45, 97, 0.6)); }
+
+.comment {
+  width: 20%;
+  height: 21rem;
+  position: relative; }
+  .comment__content {
+    position: absolute;
+    padding: 4rem 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 25% 95%, 0 75%); }
+    .comment__content::before {
+      content: url("../../imgs/left-quote.png");
+      transform: scale(0.7);
+      position: absolute;
+      left: 3%;
+      top: 3%; }
+  .comment__content-shadow {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5)); }
+  .comment__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: -4px 3px 4px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 5%;
+    top: -7%;
+    z-index: 10; }
+  .comment__text {
+    display: block;
+    height: 12rem;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #676666; }
+  .comment__name {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: right; }
+  .comment:nth-child(2), .comment:nth-child(4) {
+    align-self: flex-end; }
 
 .counter {
   padding: 3rem 1rem;
@@ -415,8 +465,37 @@ body {
     justify-content: space-between;
     align-items: center; }
 
-.sec-comment {
+.sec-idea {
   height: 35rem;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../../imgs/comment7.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .sec-idea__text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px; }
+
+.sec-comment {
+  height: 50rem;
+  padding: 4rem 5rem 4rem 5rem;
+  background-image: linear-gradient(to bottom, rgba(61, 190, 113, 0.9), rgba(163, 235, 177, 0.7)), url("../../imgs/bg-comment.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .sec-comment__top {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; }
+  .sec-comment__bottom {
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; }
