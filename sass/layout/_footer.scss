@@ -1,4 +1,201 @@
 .footer{
- background-color: red;
-  height: 20rem;
+
+
+  background-color: #ececec;
+  height: 27rem;
+
+  box-shadow: 3px 3px 10px 7px rgba(#000,.2);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+
+
+ &__top{
+  flex: 0 0 80%;
+  width: 100%;
+  padding: 0 2rem;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+ }
+
+ &__top-left{
+  flex:0 0 25%;
+  height: 90%;
+  //background-color: orange;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+ }
+
+ &__logo{
+  width: 14rem;
+ }
+
+ &__company-info-list{
+  list-style: none;
+  color:#8e8e8e;
+  font-weight: 300;
+ // background-color: red;
+
+
+  height: 70%;
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+
+ }
+
+ &__company-info-item{
+
+  padding-left: 1rem;
+  //background-color: blue;
+
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  svg{
+   margin-right: .5rem;
+  }
+
+  img{
+   width: 10rem;
+  }
+
+
+
+
+
+
+
+
+ }
+
+ &__icon{
+  width: 1rem;
+  height: 1rem;
+  fill: #3dbe71;
+ }
+
+
+ &__top-right{
+  flex: 0 0 55%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+ }
+
+ &__bottom{
+  //flex: 0 0 20%;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #63C48A;
+
+ }
+
+ &__container{
+
+  width: 100%;
+
+   &:last-child{
+    flex: 0 0 35%;
+   }
+
+
+
+ }
+
+ &__header{
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+
+
+  position: relative;
+
+ }
+ &__header-underline{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background-color: #3dbe71;
+ }
+
+
+ &__list{
+
+  list-style: none;
+  line-height: 2;
+  margin-top: 1rem;
+
+
+ }
+
+ &__item{
+
+
+  display: flex;
+  height: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-indent: 1.5rem;
+
+
+
+  position: relative;
+
+  &::before{
+   content: url("../../imgs/sign.png");
+
+   position: absolute;
+   left: -5%;
+
+
+
+   transform: scale(.4);
+
+  }
+ }
+
+ &__link{
+  &,
+  &:link,
+  &:visited {
+   text-decoration: none;
+   font-size: .9rem;
+   font-weight: 600;
+   color: #716e6e;
+  }
+
+  &:active,
+  &:focus{
+
+  }
+
+ }
 }

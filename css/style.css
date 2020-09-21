@@ -207,6 +207,7 @@ body {
     clip-path: polygon(0 0, 100% 10%, 100% 90%, 25% 95%, 0 75%); }
     .comment__content::before {
       content: url("../../imgs/left-quote.png");
+      opacity: .4;
       transform: scale(0.7);
       position: absolute;
       left: 3%;
@@ -265,6 +266,33 @@ body {
     letter-spacing: 1px;
     color: white; }
 
+.social-nav {
+  padding-top: .5rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column; }
+  .social-nav__list {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    justify-content: space-between; }
+  .social-nav__link, .social-nav__link:link, .social-nav__link:visited {
+    display: flex;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 50%;
+    border: 2px solid #3dbe71;
+    transition: all .2s ease-in; }
+  .social-nav__link:active, .social-nav__link:hover {
+    background-color: #3dbe71;
+    border: 2px solid #1b1b1b; }
+    .social-nav__link:active svg, .social-nav__link:hover svg {
+      fill: white; }
+  .social-nav__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #3dbe71; }
+
 .nav {
   flex: 0 0 55%; }
   .nav__list {
@@ -290,7 +318,7 @@ body {
       text-transform: uppercase;
       font-weight: 600;
       padding: .5rem .8em; }
-    .nav__link:hover:after, .nav__linkactive:after {
+    .nav__link:hover::after, .nav__linkactive::after {
       width: 100%; }
 
 .header {
@@ -303,8 +331,102 @@ body {
     flex: 0 0 25%; }
 
 .footer {
-  background-color: red;
-  height: 20rem; }
+  background-color: #ececec;
+  height: 27rem;
+  box-shadow: 3px 3px 10px 7px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .footer__top {
+    flex: 0 0 80%;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__top-left {
+    flex: 0 0 25%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .footer__logo {
+    width: 14rem; }
+  .footer__company-info-list {
+    list-style: none;
+    color: #8e8e8e;
+    font-weight: 300;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .footer__company-info-item {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .footer__company-info-item svg {
+      margin-right: .5rem; }
+    .footer__company-info-item img {
+      width: 10rem; }
+  .footer__icon {
+    width: 1rem;
+    height: 1rem;
+    fill: #3dbe71; }
+  .footer__top-right {
+    flex: 0 0 55%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around; }
+  .footer__bottom {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #63C48A; }
+  .footer__container {
+    width: 100%; }
+    .footer__container:last-child {
+      flex: 0 0 35%; }
+  .footer__header {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    position: relative; }
+  .footer__header-underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: #3dbe71; }
+  .footer__list {
+    list-style: none;
+    line-height: 2;
+    margin-top: 1rem; }
+  .footer__item {
+    display: flex;
+    height: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    text-indent: 1.5rem;
+    position: relative; }
+    .footer__item::before {
+      content: url("../../imgs/sign.png");
+      position: absolute;
+      left: -5%;
+      transform: scale(0.4); }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #716e6e; }
 
 .sec-info {
   height: 39rem;
@@ -467,7 +589,7 @@ body {
 
 .sec-idea {
   height: 35rem;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../../imgs/comment7.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../../imgs/comment-org1.jpg");
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -484,7 +606,8 @@ body {
 .sec-comment {
   height: 50rem;
   padding: 4rem 5rem 4rem 5rem;
-  background-image: linear-gradient(to bottom, rgba(61, 190, 113, 0.9), rgba(163, 235, 177, 0.7)), url("../../imgs/bg-comment.jpeg");
+  background-image: linear-gradient(to bottom, rgba(144, 144, 144, 0.6), rgba(144, 144, 144, 0.6)), url("../../imgs/comment-bg.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center; }

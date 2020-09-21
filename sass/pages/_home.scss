@@ -250,7 +250,7 @@
   height: 35rem;
 
 
-  background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4 )), url("../../imgs/comment7.jpg") ;
+  background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4 )), url("../../imgs/comment-org1.jpg") ;
   background-size: cover;
   background-attachment: fixed;
 
@@ -275,10 +275,10 @@
   height: 50rem;
   padding: 4rem 5rem 4rem 5rem;
 
-  background-image:  linear-gradient(to bottom, rgba(61, 190, 113, 0.9), rgba(#a3ebb1, 0.7)), url("../../imgs/bg-comment.jpeg");
- // background-image: linear-gradient(to bottom ,rgba(#fff,.4),rgba(#fff,.4 )), url("../../imgs/comment7.jpg") ;
- // background-size: cover;
- // background-attachment: fixed;
+
+  background-image: linear-gradient(to bottom ,rgba(#909090,.6),rgba(#909090,.6 )), url("../../imgs/comment-bg.jpg");
+  background-size: cover;
+
 
   display: flex;
   flex-direction: column;
