@@ -1,5 +1,14 @@
+.container{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
 .sec-info{
   height: 39rem;
+//  height: calc(100vh - 9rem);
   padding: 4rem 6rem 0 6rem;
 
   display: flex;

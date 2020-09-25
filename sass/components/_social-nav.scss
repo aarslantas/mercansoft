@@ -1,6 +1,8 @@
+
+
 .social-nav{
  // background-color: purple;
-  padding-top: .5rem;
+
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -22,38 +24,80 @@
     &:link,
     &:visited{
       display: flex;
-
       text-decoration: none;
-
-
       padding: .5rem;
-      border-radius: 50%;
-      border: 2px solid #3dbe71;
 
       transition: all .2s ease-in;
+
+
+
     }
 
     &:active,
     &:hover{
 
-      background-color: #3dbe71;
-      border: 2px solid #1b1b1b;
-
       svg{
-        fill: white;
+        fill: #17015d;
       }
 
 
     }
 
+
+
   }
 
   &__icon{
-    width:1.2rem;
-    height: 1.2rem;
-    fill: #3dbe71;
+    width:1rem;
+    height: 1rem;
+    fill: #82b395;
+
+  }
+
+  &--big{
+
+    padding-top: .5rem;
+
+    .social-nav__link{
+      &,
+      &:link,
+      &:visited{
+        border-radius: 50%;
+        border: 2px solid #3dbe71;
+
+      }
+
+      &:active,
+      &:hover{
+
+        background-color: #3dbe71;
+        border: 2px solid #1b1b1b;
+
+        svg{
+          fill: white;
+        }
+
+
+      }
+
+    }
+
+
+    .social-nav__icon{
+      width:1.2rem;
+      height: 1.2rem;
+      fill: #3dbe71;
+    }
+
   }
 
 
-
 }
+
+
+
+
+
+
+
+

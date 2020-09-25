@@ -1,0 +1,31 @@
+.form{
+  height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__input{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    width: 80%;
+
+
+    padding: .5rem 1rem;
+    border:1px solid #3dbe71;
+
+    &::placeholder{
+      font-weight: 200;
+    }
+  }
+
+
+  &__message{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 1rem 3rem;
+    border:1px solid #3dbe71;
+  }
+}

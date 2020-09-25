@@ -1,15 +1,35 @@
 .header{
 
-  height: 5rem;
-  padding: 4rem .5rem;
+  height: 8rem;
+  padding: 0 .5rem;
+  //background-color: orange;
+
+  position:relative;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 
 
+  &__social-search{
+    width: 10rem;
+    //background-color: pink;
+    position: absolute;
+    right: 10%;
+    top: 2%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
   &__logo{
     flex: 0 0 25%;
   }
+
+
 
 }

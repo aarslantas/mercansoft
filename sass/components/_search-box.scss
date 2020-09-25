@@ -1,0 +1,79 @@
+.search-box{
+
+
+  &__form{
+
+
+
+    //background-color: orange;
+    position: relative;
+
+
+  }
+
+  &__input{
+
+    display: block;
+    width: 0;
+    opacity: 0;
+    font-size: .9rem;
+    font-weight: 300;
+    border: 0;
+    padding: .5rem 1rem;
+
+
+
+
+
+
+
+    &:focus{
+      outline: none;
+    }
+
+    &::placeholder{
+      color:black;
+    }
+
+  }
+  &__button{
+    display: block;
+    position: absolute;
+    left: 95%;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    transition: all .3s;
+  }
+  &__svg{
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #3dbe71;
+  }
+
+  &__checkbox{
+   display: none;
+  }
+
+  &__checkbox:checked ~ &__input{
+
+    width: 100%;
+    opacity: 1;
+    outline:1px solid #3dbe71;
+
+
+
+  }
+
+  &__checkbox:checked + &__button{
+
+
+    left: 0;
+
+
+  }
+
+
+
+}

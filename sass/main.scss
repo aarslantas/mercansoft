@@ -1,4 +1,5 @@
 @import "sass/base/base";
+@import "sass/base/animations";
 @import "sass/base/typography";
 @import "sass/base/utilities";
 
@@ -6,6 +7,8 @@
 @import "sass/components/card";
 @import "sass/components/comment";
 @import "sass/components/counter";
+@import "sass/components/form";
+@import "sass/components/search-box";
 @import "sass/components/social-nav";
 @import "sass/components/navigation";
 
@@ -13,6 +16,7 @@
 @import "sass/layout/header";
 @import "sass/layout/footer";
 
+@import "sass/pages/contactus";
 @import "sass/pages/home";
 
 
