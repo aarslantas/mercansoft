@@ -1,12 +1,11 @@
 .btn{
-
     padding: 1.25rem 3rem;
     //height: 2.5rem;
     //width: 6rem;
     text-transform: uppercase;
     border-radius: 5rem;
-    background-color:#3dbe71;
-    color:#fff;
+    background-color:$color-primary;
+    color:$color-white;
     border:none;
     font-size: .7rem;
     letter-spacing: 1px;
@@ -18,7 +17,6 @@
     transition: all .2s ease-in;
 
     span{
-
       position: absolute;
       left: 50%;
       top:50%;
@@ -39,11 +37,10 @@
 
   &:hover,
   &:active{
-    background-color: #5db380;
+    background-color: $color-primary-light;
 
     span {
       opacity: 0;
-
 
       &:last-child{
         top:50%;
@@ -67,11 +64,20 @@
   }
 
   &--pink{
-    background-color: rgba(#ee4266,.7);
+    background-color: rgba(#ee4266,.8);
+
+    &:hover{
+      background-color: rgba(#ee4266,.6);
+    }
+
   }
 
   &--purple{
-    background-color: rgba(#540d6e, .7);
+    background-color: rgba(#540d6e, .8);
+    &:hover{
+      background-color: rgba(#540d6e,.6);
+    }
+
   }
 
 

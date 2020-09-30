@@ -22,7 +22,7 @@
       bottom:0;
       width:0;
       height: 3px;
-      background-color: #3dbe71;
+      background-color: $color-primary;
 
       transition: all .2s ease-in;
     }
@@ -31,7 +31,7 @@
     &:visited,
     &:link {
       font-size: .8rem;
-      color: #504b72 ;
+      color: rgba($color-black,.7);
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 600;
@@ -41,7 +41,7 @@
 
 
     &:hover,
-    &active{
+    &:active{
        &::after{
          width: 100%;
        }

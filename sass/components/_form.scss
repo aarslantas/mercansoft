@@ -1,10 +1,13 @@
 .form{
-  height: 35rem;
+  height: 30rem;
+  width: 100%;
+  //background-color: red;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
 
   &__input{
     font-family: 'Nunito', sans-serif;
@@ -12,20 +15,36 @@
     width: 80%;
 
 
-    padding: .5rem 1rem;
-    border:1px solid #3dbe71;
+    padding: .8rem 1rem;
 
-    &::placeholder{
+    border:1px solid $color-primary;
+
+    &:focus{
+      outline: 2px solid $color-primary;
+      border: none;
+    }
+
+    &::-webkit-input-placeholder{
       font-weight: 200;
     }
   }
 
+  &__message{
+    resize: none;
+  }
+
+  /*
+  &__input{
+    @include input;
+  }
+
 
   &__message{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.1rem;
-    width: 80%;
-    padding: 1rem 3rem;
-    border:1px solid #3dbe71;
+    @include input{
+      resize: none;
+    };
+
   }
+  */
+
 }

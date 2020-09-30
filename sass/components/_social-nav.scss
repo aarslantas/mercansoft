@@ -37,7 +37,7 @@
     &:hover{
 
       svg{
-        fill: #17015d;
+        fill: $color-secondary;
       }
 
 
@@ -50,7 +50,8 @@
   &__icon{
     width:1rem;
     height: 1rem;
-    fill: #82b395;
+    fill: rgba($color-primary-light, .8);
+    // fill: #82b395;
 
   }
 
@@ -63,18 +64,20 @@
       &:link,
       &:visited{
         border-radius: 50%;
-        border: 2px solid #3dbe71;
+        border: 2px solid $color-primary;
 
       }
 
       &:active,
       &:hover{
 
-        background-color: #3dbe71;
-        border: 2px solid #1b1b1b;
+        background-color: $color-primary;
+
+        border: 2px solid rgba($color-secondary,.7);
+        //border: 2px solid #1b1b1b;
 
         svg{
-          fill: white;
+          fill: $color-white;
         }
 
 
@@ -86,7 +89,7 @@
     .social-nav__icon{
       width:1.2rem;
       height: 1.2rem;
-      fill: #3dbe71;
+      fill: $color-primary;
     }
 
   }

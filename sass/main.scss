@@ -1,3 +1,6 @@
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+
 @import "sass/base/base";
 @import "sass/base/animations";
 @import "sass/base/typography";
@@ -5,10 +8,11 @@
 
 @import "sass/components/btn";
 @import "sass/components/card";
+@import "sass/components/comp-contact-info";
 @import "sass/components/comment";
 @import "sass/components/counter";
 @import "sass/components/form";
-@import "sass/components/search-box";
+
 @import "sass/components/social-nav";
 @import "sass/components/navigation";
 

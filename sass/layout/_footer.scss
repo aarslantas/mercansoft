@@ -2,7 +2,7 @@
 
 
   background-color: #ececec;
-  height: 27rem;
+  height: 25rem;
 
   box-shadow: 3px 3px 10px 7px rgba(#000,.2);
 
@@ -13,7 +13,7 @@
 
 
  &__top{
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   width: 100%;
   padding: 0 2rem;
 
@@ -37,61 +37,11 @@
   align-items: flex-start;
  }
 
- &__logo{
-  width: 14rem;
- }
-
- &__company-info-list{
-  list-style: none;
-  color:#8e8e8e;
-  font-weight: 300;
- // background-color: red;
-
-
-  height: 70%;
-
-
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-
-
- }
-
- &__company-info-item{
-
-  padding-left: 1rem;
-  //background-color: blue;
-
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  svg{
-   margin-right: .5rem;
-  }
-
-  img{
-   width: 10rem;
-  }
 
 
 
 
 
-
-
-
- }
-
- &__icon{
-  width: 1rem;
-  height: 1rem;
-  fill: #3dbe71;
- }
 
 
  &__top-right{
@@ -106,9 +56,9 @@
   flex: 1;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  background-color: #63C48A;
+  background-color: $color-primary-light;
 
  }
 
@@ -142,7 +92,7 @@
   display: block;
   width: 3rem;
   height: 2px;
-  background-color: #3dbe71;
+  background-color: $color-primary;
  }
 
 
@@ -187,15 +137,25 @@
   &:link,
   &:visited {
    text-decoration: none;
-   font-size: .9rem;
-   font-weight: 600;
-   color: #716e6e;
+   font-size: 1rem;
+   letter-spacing: 1px;
+   font-weight: 300;
+   color:$color-font-2;
+  // color: #716e6e;
   }
 
+  &:hover,
   &:active,
   &:focus{
-
+   color: $color-primary;
   }
 
+ }
+
+ &__copyright{
+  color:rgba($color-white,.8);
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: 1px;
  }
 }

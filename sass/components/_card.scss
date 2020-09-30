@@ -2,7 +2,7 @@
   height: 80%;
   width:30%;
 
-  background-color:#fff;
+  background-color:$color-white;
   box-shadow: 0 2rem 2.5rem rgba(0,0,0,.2);
   border-radius: 4px;
 
@@ -46,12 +46,12 @@
  &__img{
    width: 4rem;
    height: 4rem;
-   fill: #fff;
+   fill: $color-white;
  }
 
   &__texts{
     line-height: 1;
-    color:#fff;
+    color:$color-white;
 
     display: flex;
     flex-direction: column;
@@ -113,8 +113,7 @@
   {
     transform: scale(1.1);
 
-
-      position: relative;
+    position: relative;
 
 
     &::before{
@@ -137,7 +136,7 @@
       top: 35%;
       z-index: 10;
 
-      color:#fff;
+      color:$color-white;
       font-weight: 300;
       font-size: .9rem;
       text-align: center;
@@ -167,4 +166,3 @@
   background-image: linear-gradient(to right bottom,rgba(#540d6e,.8),rgba(#532d61,.6));
 }
 
-//#ef6985 #f7d978
