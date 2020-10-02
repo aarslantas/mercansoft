@@ -55,33 +55,41 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
-
-
         <div class="header__logo">
-            <img src="imgs/lg-3.png" alt="logo" class="header__logo-img">
+            <img srcset="imgs/logo-big.png 205w, imgs/logo-big.png 180w"
+                 sizes="(min-width:1000px) 205px,180px"
+                 src="imgs/logo-big.png" alt="logo" class="header__logo-img">
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="" class="nav__link">home</a></li>
-                <li class="nav__item"><a href="" class="nav__link">blog</a></li>
-                <li class="nav__item"><a href="" class="nav__link">costumers</a></li>
-                <li class="nav__item"><a href="" class="nav__link">software</a></li>
-                <li class="nav__item"><a href="" class="nav__link">endustry</a></li>
-                <li class="nav__item"><a href="" class="nav__link">about us</a></li>
-                <li class="nav__item"><a href="contactus.html" class="nav__link">contact us</a></li>
-            </ul>
-        </nav>
-        <button class="btn"><span>LOGIN</span><span>LOGIN</span></button>
+        <div class="navigation">
 
+            <input type="checkbox" class="navigation__checkbox" id="navigation__checkbox">
+            <label for="navigation__checkbox" class="navigation__button">
+                <span class="navigation__icon"></span>
+                <span class="navigation__icon"></span>
+                <span class="navigation__icon"></span>
+            </label>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Anasayfa</a></li>
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Hakkımızda</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">HİZMETLERİMİZ</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">Referanslarımız</a></li>
+                    <li class="navigation__item"><a href="contact.html" class="navigation__link">Blog</a></li>
+                    <li class="navigation__item"><a href="contact.html" class="navigation__link">İLETİŞİM</a></li>
+                </ul>
+                <button class="btn"><span>LOGIN</span><span>LOGIN</span></button>
+
+            </nav>
+        </div>
     </header>
     <section class="sec-info">
             <div class="sec-info__left">
                 <h1 class="t1">
-                    <span>A simple and smart </span>
-                    <span>tool that will help you to</span>
-                    <span>grow your businness</span>
+                    <span>İşinizi büyütmede </span>
+                    <span>size yardımcı olmak için</span>
+                    <span>akıllı yazılımlar geliştiriyoruz</span>
                 </h1>
                 <p class="t4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur culpa delectus deleniti doloribus fugit hic magni odio possimus provident quaerat ratione repudiandae saepe ut, veritatis! Amet at eum possimus?</p>
                 <button class="btn btn--middle">
@@ -268,7 +276,7 @@
         <button class="btn btn--middle"><span>Detaylar</span><span>Detaylar </span></button>
     </section>
     <section class="sec-cards">
-        <h1 class="t2 ">Hosting Paketlerimiz</h1>
+        <h1 class="t2 t2--green ">Hosting Paketlerimiz</h1>
         <div class="sec-cards__cards">
             <div class="card">
 
@@ -280,7 +288,7 @@
                     <div class="card__texts">
                         <span class="card__title">Ekonomik</span>
                         <span class="card__price">1800<sup>TL</sup></span>
-                        <small class="card__text">aylık</small>
+                        <small class="card__text">yıllık</small>
                     </div>
                 </div>
                 <div class="card__bottom">
@@ -358,7 +366,7 @@
         <div class="sec-comment__bottom">
             <div class="comment">
 
-                <img src="imgs/person.jpg" alt="person" class="comment__img">
+                <img src="imgs/profile1.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
                         <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
@@ -370,11 +378,11 @@
             </div>
             <div class="comment">
 
-                <img src="imgs/person.jpg" alt="person" class="comment__img">
+                <img src="imgs/profile2.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
                         <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
-                        <span class="comment__name">-A. ARSLANTAŞ</span>
+                        <span class="comment__name">-A. PAVLOVA</span>
                     </div>
                 </div>
 
@@ -382,11 +390,11 @@
             </div>
             <div class="comment">
 
-                <img src="imgs/person.jpg" alt="person" class="comment__img">
+                <img src="imgs/profile3.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
                         <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
-                        <span class="comment__name">-A. ARSLANTAŞ</span>
+                        <span class="comment__name">-J. GONZALEZ</span>
                     </div>
                 </div>
 
@@ -394,11 +402,11 @@
             </div>
             <div class="comment">
 
-                <img src="imgs/person.jpg" alt="person" class="comment__img">
+                <img src="imgs/profile4.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
                         <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
-                        <span class="comment__name">-A. ARSLANTAŞ</span>
+                        <span class="comment__name">-S. LIVERANA</span>
                     </div>
                 </div>
             </div>
@@ -413,65 +421,75 @@
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__top-left">
-                <img src="imgs/logo-footer.png" alt="footer-logo" class="footer__logo">
 
-                <ul class="footer__company-info-list">
-                    <li class="footer__company-info-item">
-                        <svg class="footer__icon">
+            <div class="comp-contact-info">
+                <img src="imgs/logo-footer.png" alt="footer-logo" class="comp-contact-info__logo">
+
+                <ul class="comp-contact-info__list">
+                    <li class="comp-contact-info__item">
+                        <svg class="comp-contact-info__icon">
                             <use xlink:href="imgs/sprite.svg#pin"></use>
                         </svg>
                         <p>Fatih Mahallesi 800.sok No:69<br>Kadıköy/ İSTANBUL</p>
                     </li>
-                    <li class="footer__company-info-item">
-                        <svg class="footer__icon">
+                    <li class="comp-contact-info__item">
+                        <svg class="comp-contact-info__icon">
                             <use xlink:href="imgs/sprite.svg#call"></use>
                         </svg>
                         <span>0216 444 22 11</span>
                     </li>
-                    <li class="footer__company-info-item">
-                        <svg class="footer__icon">
+                    <li class="comp-contact-info__item">
+                        <svg class="comp-contact-info__icon">
                             <use xlink:href="imgs/sprite.svg#smartphone"></use>
                         </svg>
                         <span>0544 444 22 11</span>
                     </li>
-                    <li class="footer__company-info-item">
-                        <svg class="footer__icon">
+                    <li class="comp-contact-info__item">
+                        <svg class="comp-contact-info__icon">
                             <use xlink:href="imgs/sprite.svg#call"></use>
                         </svg>
                         <span>mercansoft@mercansoft.com</span>
                     </li>
-                    <li class="footer__company-info-item">
+                    <li class="comp-contact-info__item">
                         <img src="imgs/google.png" alt="google play"> <img src="imgs/apple.png" alt="apple">
                     </li>
 
-                    
+
 
                 </ul>
+            </div>
+
+
+
+
 
             </div>
             <div class="footer__top-right">
                 <div class="footer__container">
-                    <h4 class="footer__header"> SoftWare <span class="footer__header-underline"></span></h4>
+                    <h4 class="footer__header"> Hakkımızda <span class="footer__header-underline"></span></h4>
                     <ul class="footer__list">
                         <li class="footer__item"><a class="footer__link" href="">item-1</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-2</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-3</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-4</a></li>
+                        <li class="footer__item"><a class="footer__link" href="">item-5</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__container">
-                    <h4 class="footer__header"> Product <span class="footer__header-underline"></span></h4>
+                    <h4 class="footer__header"> Hizmetlerimiz <span class="footer__header-underline"></span></h4>
                     <ul class="footer__list">
                         <li class="footer__item"><a class="footer__link" href="">item-1</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-2</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-3</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-4</a></li>
+                        <li class="footer__item"><a class="footer__link" href="">item-5</a></li>
+                        <li class="footer__item"><a class="footer__link" href="">item-6</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__container">
-                    <h4 class="footer__header"> Endustry <span class="footer__header-underline"></span></h4>
+                    <h4 class="footer__header"> Kampanyalar <span class="footer__header-underline"></span></h4>
                     <ul class="footer__list">
                         <li class="footer__item"><a class="footer__link" href="">item-1</a></li>
                         <li class="footer__item"><a class="footer__link" href="">item-2</a></li>
@@ -527,12 +545,9 @@
                     </nav>
                 </div>
             </div>
-
-
-
         </div>
         <div class="footer__bottom">
-
+            <p class="footer__copyright"> Copyright &copy; 2020 Tüm Hakları Saklıdır </p>
         </div>
 
     </footer>

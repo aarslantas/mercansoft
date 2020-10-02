@@ -1,15 +1,116 @@
-.nav{
+.navigation{
+  position: relative;
+ // background-color: orange;
 
-  flex: 0 0 55%;
+  flex-basis: 90%;
+
+  @media only screen and (max-width: 1000px) {
+    flex:1;
+  }
+
+  display: flex;
+  justify-content: flex-end;
+
+
+
+
+  &__checkbox{
+    display: none;
+  }
+
+  &__button{
+    visibility: hidden;
+    position: absolute;
+
+    top: 50%;
+    right:0;
+    transform: translate(-50%,-50%);
+
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: $color-primary;
+
+
+    padding: 4px;
+
+    height: 1.8rem;
+    width: 2rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    @media only screen and (max-width: 768px) {
+
+      visibility: visible;
+    }
+
+
+
+  }
+
+  &__icon{
+    display: block; // sonra eklenecek
+    width:1.4rem;
+    height: 2.5px;
+    background-color: $color-white;
+  }
+
+
+  &__nav{
+    list-style: none;
+    //background-color: red;
+    width: 75%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media only screen and (max-width: 1000px) {
+      width: 80%;
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+
+    }
+
+
+
+  }
+
+
+
 
   &__list{
-   list-style: none;
+   // background-color: blue;
+
+   flex: 0 0 80%;
+
+
+    list-style: none;
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    @media only screen and (max-width: 1000px) {
+      justify-content: space-between;
+
+    }
   }
 
+
+
   &__link{
+
+
 
     transition: all 1s;
     position: relative;
@@ -35,18 +136,26 @@
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 600;
-      padding: .5rem .8em;
+
 
     }
 
 
     &:hover,
     &:active{
-       &::after{
-         width: 100%;
-       }
+      &::after{
+        width: 100%;
+      }
 
     }
 
   }
+
+
+
+
+
+
+
 }
+

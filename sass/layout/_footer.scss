@@ -45,10 +45,10 @@
 
 
  &__top-right{
-  flex: 0 0 55%;
+  flex: 0 0 50%;
   height: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
  }
 
  &__bottom{
@@ -75,7 +75,7 @@
  }
 
  &__header{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
   line-height: 1.5;
@@ -137,7 +137,7 @@
   &:link,
   &:visited {
    text-decoration: none;
-   font-size: 1rem;
+   //font-size: 1rem;
    letter-spacing: 1px;
    font-weight: 300;
    color:$color-font-2;
