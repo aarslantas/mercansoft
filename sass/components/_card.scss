@@ -13,6 +13,14 @@
   justify-content: space-between;
   align-items: center;
 
+  @media only screen and (max-width: 768px) {
+
+    width: 45%;
+    height: 45%;
+
+
+  }
+
   &__top{
     flex: 0 0 45%;
     width: 100%;
@@ -124,6 +132,13 @@
       top: 33%;
 
       z-index: 10;
+
+      @media only screen and (max-width: 768px) {
+        transform: scale(1.2);
+
+
+      }
+
     }
 
     &::after{
@@ -143,10 +158,20 @@
       line-height: 1.25;
       letter-spacing: 1.5px;
 
+      @media only screen and (max-width: 768px) {
+        right: 12%;
+        top: 36%;
+
+      }
+
 
     }
 
 
+    @media only screen and (max-width: 768px) {
+      transform: scale(1);
+
+    }
 
 
 

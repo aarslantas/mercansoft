@@ -8,10 +8,25 @@
 
 .sec-info{
   height: 39rem;
+
 //  height: calc(100vh - 9rem);
   padding: 4rem 6rem 1rem 6rem;
 
   display: flex;
+  justify-content: center;
+
+
+  &__container{
+    width: 100%;
+    display: flex;
+
+    @media only screen and (min-width: 1400px) { //sonradan eklenecek
+      width: 80%;
+
+    }
+
+  }
+
 
 
   &__left{
@@ -19,25 +34,28 @@
     height: 65%;
 
 
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     animation: anim-info .4s ease-out;
 
-    
+    @media only screen and (max-width: 768px) {
+     height: 70%;
+
+    }
 
   }
 
   &__right{
-    animation: anim-info .4s ease-out;
-
-
     flex: 0 0 50%;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    animation: anim-info .4s ease-out;
   }
 
   &__img{
@@ -45,26 +63,34 @@
     height:90%;
   }
 
+  @media only screen and (max-width: 768px) {
+    padding: 4rem 3rem 1rem 3rem;
 
+  }
 
 
 }
 
 .sec-features{
    padding: 4rem 6rem ;
-   height: 50rem;
+   min-height: 50rem;
 
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
 
+  @media only screen and (max-width: 768px) {
+    padding: 3rem;
+
+  }
+
 
 
   &__content{
-    //background-color: orange;
+   // background-color: orange;
     width: 90%;
-    height: 32rem;
+    min-height: 32rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -72,12 +98,17 @@
     @media only screen and (max-width: 1000px) {
       width: 100%;
       justify-content: space-around;
+
+
     }
+
+
 
   }
 
   &__texts{
     width: 70%;
+
     text-align: center;
 
 
@@ -85,10 +116,14 @@
     flex-direction: column;
     justify-content: space-around;
 
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+
   }
 
   &__feature{
-    height: 13rem;
+    min-height: 13rem;
     width: 27%;
     text-align: justify;
    // background-color: red;
@@ -100,18 +135,35 @@
     align-items: center;
 
     h2{
-      flex:0 0 20%;
       white-space: nowrap; // tek satır olsun. sonradan eklenecek
     }
+
+    @media only screen and (max-width: 1000px) {
+      margin: 1rem;
+
+    }
+
+
+
+    @media only screen and (max-width: 768px) {
+      justify-content: space-around;
+
+      width: 40%;
+
+    }
+
+
 
   }
 
   &__img{
-    flex:0 0 20%;
+
+
 
     width: 2.5rem;
-    //height: 2.5rem; başta eklenecek sonradan kalıdırılacak   sayfayı küçültünce ikonlar küçüldüğü için height yerine flex uygulandı
+    height: 2.5rem; // başta eklenecek sonradan kalıdırılacak   sayfayı küçültünce ikonlar küçüldüğü için height yerine flex uygulandı
     fill: $color-primary;
+
   }
 }
 
@@ -196,6 +248,11 @@
     margin-bottom: .5rem;
     letter-spacing: 1px;
 
+    @media only screen and (max-width: 768px) {
+      font-size: 1rem;
+
+    }
+
   }
   &__text{
     font-size:.9rem;
@@ -210,6 +267,12 @@
     float: left;
     shape-outside: circle(50%);
     margin: 0 1rem;
+
+    @media only screen and (max-width: 768px) {
+      width: 6rem;
+      height: 6rem;
+
+    }
   }
 
 }
@@ -217,27 +280,64 @@
 .sec-counter{
   height: 40rem;
   padding: 3rem 6rem;
-  background-image:linear-gradient(to bottom,rgba($color-tertiary,.5),rgba($color-tertiary,.4)),url("../../imgs/bg.jpg");
+  background-image:linear-gradient(to bottom,rgba($color-tertiary,.6),rgba($color-tertiary,.5)),url("../../imgs/bg.jpg");
   background-size: cover;
 
-
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+ justify-content: center;
+
+
+  &__container{
+    width: 80%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 3rem 2rem;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+
+    padding: 3rem 2rem;
+    height: 50rem;
+  }
 
   &__top{
     width: 70%;
     text-align: center;
 
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+
 
   }
   &__bottom{
-    width: 80%;
-    flex: 0 0 40%;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
+
+
+
+
+    @media only screen and (max-width: 768px) {
+
+      width: 65%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -252,6 +352,20 @@
   justify-content: space-between;
   align-items: center;
 
+
+  @media only screen and (max-width: 1000px) {
+    padding:4rem 1rem 2rem 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 90rem;
+    justify-content: space-around;
+
+
+  }
+
+
+
   &__cards{
 
     flex: 0 0 90%;
@@ -261,6 +375,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (min-width: 1400px) { //sonradan eklenecek
+      width: 70%;
+
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      flex:0 0 95%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+
+
+
   }
 }
 
@@ -283,6 +413,10 @@
     font-size: 3.5rem;
     color:#fff;
     letter-spacing: 2px;
+
+    @media only screen and (max-width: 768px) {
+      font-size:3rem;
+    }
   }
 
 
@@ -294,6 +428,9 @@
   padding: 4rem 5rem;
 
 
+
+
+
  // background-image: linear-gradient(to bottom ,rgba(#b4bbbd,.6),rgba(#b4bbbd,.4)), url("../../imgs/grey-bg-2.jpg");
   background-color: rgba(#b4bbbd,.7);
   background-size: cover;
@@ -302,6 +439,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 1000px) {
+    padding: 4rem 2rem;
+
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 3rem 1rem 2rem 1rem;
+    height: 56rem;
+  }
+
+
+
 
   &__top{
 
@@ -312,13 +462,26 @@
     justify-content:space-between ;
     text-align: center;
 
+    @media only screen and (max-width: 768px) {
+      flex:1;
+      margin-bottom: 4rem;
+    }
+
+
   }
   &__bottom{
     flex: 0 0 80%;
+    width: 80%;
     //background-color: orange;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+
+    }
+
   }
 
 

@@ -25,3 +25,7 @@ body{
 
 }
 
+::selection{
+  background-color: rgba($color-primary,.6);
+}
+

@@ -13,3 +13,67 @@
 
   }
 }
+
+
+@keyframes anim-nav {
+  0%{
+    top: 0;
+   opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+    top: 2rem;
+    visibility: visible;
+  }
+}
+
+@keyframes nav-icon{
+  0%{
+    background-color: $color-white;
+
+  }
+
+  30%{
+    background-color: transparent;
+
+  }
+  100%{
+    background-color: transparent;
+
+  }
+}
+
+
+
+@keyframes nav-icon-before{
+  0%{
+    transform: translateY(0);
+  }
+
+  30%{
+    transform: translateY(6px) ;
+
+  }
+
+  100%{
+    transform: translateY(6px) rotate(45deg);
+
+  }
+}
+
+@keyframes nav-icon-after{
+  0%{
+    transform: translateY(0);
+  }
+
+  30%{
+    transform: translateY(-6px);
+
+  }
+
+  100%{
+    transform: translateY(-6px) rotate(-45deg);
+
+  }
+}

@@ -66,40 +66,55 @@
             <input type="checkbox" class="navigation__checkbox" id="navigation__checkbox">
             <label for="navigation__checkbox" class="navigation__button">
                 <span class="navigation__icon"></span>
-                <span class="navigation__icon"></span>
-                <span class="navigation__icon"></span>
             </label>
 
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="index.html" class="navigation__link">Anasayfa</a></li>
-                    <li class="navigation__item"><a href="index.html" class="navigation__link">Hakkımızda</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">HİZMETLERİMİZ</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Referanslarımız</a></li>
-                    <li class="navigation__item"><a href="contact.html" class="navigation__link">Blog</a></li>
-                    <li class="navigation__item"><a href="contact.html" class="navigation__link">İLETİŞİM</a></li>
+            <nav class="nav-top">
+                <ul class="nav-top__list">
+                    <li><a href="index.html" class="nav-top__link">Anasayfa</a></li>
+                    <li><a href="index.html" class="nav-top__link">Hakkımızda</a></li>
+                    <li><a href="" class="nav-top__link">HİZMETLERİMİZ</a></li>
+                    <li><a href="" class="nav-top__link">Referanslarımız</a></li>
+                    <li><a href="contact.html" class="nav-top__link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-top__link">İLETİŞİM</a></li>
                 </ul>
                 <button class="btn"><span>LOGIN</span><span>LOGIN</span></button>
+            </nav>
 
+
+            <nav class="nav-bottom">
+                <ul class="nav-bottom__list">
+                    <li><a href="index.html" class="nav-bottom__link">Anasayfa</a></li>
+                    <li><a href="index.html" class="nav-bottom__link">Hakkımızda</a></li>
+                    <li><a href="" class="nav-bottom__link">HİZMETLERİMİZ</a></li>
+                    <li><a href="" class="nav-bottom__link">Referanslarımız</a></li>
+                    <li><a href="contact.html" class="nav-bottom__link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-bottom__link">İLETİŞİM</a></li>
+                </ul>
+                <button class="btn btn--middle"><span>LOGIN</span><span>LOGIN</span></button>
             </nav>
         </div>
+
     </header>
     <section class="sec-info">
-            <div class="sec-info__left">
-                <h1 class="t1">
-                    <span>İşinizi büyütmede </span>
-                    <span>size yardımcı olmak için</span>
-                    <span>akıllı yazılımlar geliştiriyoruz</span>
-                </h1>
-                <p class="t4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur culpa delectus deleniti doloribus fugit hic magni odio possimus provident quaerat ratione repudiandae saepe ut, veritatis! Amet at eum possimus?</p>
-                <button class="btn btn--middle">
-                    <span>devam</span>
-                    <span>devam</span>
-                </button>
+            <div class="sec-info__container">
+                <div class="sec-info__left">
+                    <h1 class="t1">
+                        <span>İşinizi büyütmede </span>
+                        <span>size yardımcı olmak için</span>
+                        <span>akıllı yazılımlar geliştiriyoruz</span>
+                    </h1>
+                    <p class="t4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur culpa delectus deleniti doloribus fugit hic magni odio possimus provident quaerat ratione repudiandae saepe ut, veritatis! Amet at eum possimus?</p>
+                    <button class="btn btn--middle">
+                        <span>devam</span>
+                        <span>devam</span>
+                    </button>
+                </div>
+                <div class="sec-info__right">
+                    <img src="imgs/programming-2.png" alt="bg" class="sec-info__img">
+                </div>
+
             </div>
-            <div class="sec-info__right">
-                <img src="imgs/programming-2.png" alt="bg" class="sec-info__img">
-            </div>
+
     </section>
     <section class="sec-features">
         <div class="sec-features__texts">
@@ -238,42 +253,44 @@
 
     </section>
     <section class="sec-counter">
-        <div class="sec-counter__top">
-            <h1 class="t2">Neler Yaptık ?</h1>
-            <p class="t4" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium blanditiis corporis cumque deleniti doloremque in ipsum iste, laborum magnam, minima nemo placeat quas qui similique sint sit, tempore vel?</p>
+        <div class="sec-counter__container">
+            <div class="sec-counter__top">
+                <h1 class="t2">Neler Yaptık ?</h1>
+                <p class="t4" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium blanditiis corporis cumque deleniti doloremque in ipsum iste, laborum magnam, minima nemo placeat quas qui similique sint sit, tempore vel?</p>
+            </div>
+            <div class="sec-counter__bottom">
+                <div class="counter">
+                    <svg class="counter__svg">
+                        <use xlink:href="imgs/sprite.svg#user"></use>
+                    </svg>
+                    <span class="counter__num">155</span>
+                    <p class="counter__p">Mutlu Müşteri</p>
+                </div>
+                <div class="counter">
+                    <svg class="counter__svg">
+                        <use xlink:href="imgs/sprite.svg#checklist"></use>
+                    </svg>
+                    <span class="counter__num">125</span>
+                    <p class="counter__p">Tamamlanan Proje</p>
+                </div>
+                <div class="counter">
+                    <svg class="counter__svg">
+                        <use xlink:href="imgs/sprite.svg#customer-1"></use>
+                    </svg>
+                    <span class="counter__num">38</span>
+                    <p class="counter__p">Referans</p>
+                </div>
+                <div class="counter">
+                    <svg class="counter__svg">
+                        <use xlink:href="imgs/sprite.svg#customer"></use>
+                    </svg>
+                    <span class="counter__num">46</span>
+                    <p class="counter__p">Aktif Müşteri</p>
+                </div>
+            </div>
+            <button class="btn btn--middle"><span>Detaylar</span><span>Detaylar </span></button>
         </div>
 
-        <div class="sec-counter__bottom">
-            <div class="counter">
-                <svg class="counter__svg">
-                    <use xlink:href="imgs/sprite.svg#user"></use>
-                </svg>
-                <span class="counter__num">155</span>
-                <p class="counter__p">Mutlu Müşteri</p>
-            </div>
-            <div class="counter">
-                <svg class="counter__svg">
-                    <use xlink:href="imgs/sprite.svg#checklist"></use>
-                </svg>
-                <span class="counter__num">125</span>
-                <p class="counter__p">Tamamlanan Proje</p>
-            </div>
-            <div class="counter">
-                <svg class="counter__svg">
-                    <use xlink:href="imgs/sprite.svg#customer-1"></use>
-                </svg>
-                <span class="counter__num">38</span>
-                <p class="counter__p">Referans</p>
-            </div>
-            <div class="counter">
-                <svg class="counter__svg">
-                    <use xlink:href="imgs/sprite.svg#customer"></use>
-                </svg>
-                <span class="counter__num">46</span>
-                <p class="counter__p">Aktif Müşteri</p>
-            </div>
-        </div>
-        <button class="btn btn--middle"><span>Detaylar</span><span>Detaylar </span></button>
     </section>
     <section class="sec-cards">
         <h1 class="t2 t2--green ">Hosting Paketlerimiz</h1>
@@ -369,7 +386,7 @@
                 <img src="imgs/profile1.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
+                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est impedit odio quia totam! A asperiores assumenda commodi consequuntur, delectus, dignissimos dolor ducimus </div>
                         <span class="comment__name">-A. ARSLANTAŞ</span>
                     </div>
                 </div>
@@ -381,7 +398,7 @@
                 <img src="imgs/profile2.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
+                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est impedit odio quia totam! A asperiores assumenda commodi consequuntur, delectus, dignissimos dolor ducimus</div>
                         <span class="comment__name">-A. PAVLOVA</span>
                     </div>
                 </div>
@@ -393,7 +410,7 @@
                 <img src="imgs/profile3.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
+                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est impedit odio quia totam! A asperiores assumenda commodi consequuntur, delectus, dignissimos dolor ducimus</div>
                         <span class="comment__name">-J. GONZALEZ</span>
                     </div>
                 </div>
@@ -405,7 +422,7 @@
                 <img src="imgs/profile4.jpg" alt="person" class="comment__img">
                 <div class="comment__content-shadow">
                     <div class="comment__content">
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis, debitis dolorum expedita, illum ipsum iste, maxime molestias necessitatibus nihil non officiis quidem quisquam reprehenderit saepe sed voluptate. Quam.</div>
+                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est impedit odio quia totam! A asperiores assumenda commodi consequuntur, delectus, dignissimos dolor ducimus</div>
                         <span class="comment__name">-S. LIVERANA</span>
                     </div>
                 </div>
