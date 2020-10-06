@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
   margin: 0;
   padding: 0;
@@ -30,36 +29,3 @@ body{
   background-color: rgba($color-primary,.6);
 }
 
-=======
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-html{
-  font-size: 100%; //1rem =  16px
-
-  @media only screen and (max-width: 1000px) {
-    font-size: 90%;
-  }
-
-
-
-}
-body{
-  position: relative;
-
-  box-sizing: border-box;
-
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: $color-font-1;
-  line-height: 1.5;
-
-}
-
-::selection{
-  background-color: rgba($color-primary,.6);
-}
-
->>>>>>> c1990d952287f7734fb3cb6a4b6201fe30d21f30
