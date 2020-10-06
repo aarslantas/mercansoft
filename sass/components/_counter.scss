@@ -1,3 +1,64 @@
+<<<<<<< HEAD
+.counter{
+
+  padding: 3rem 1rem;
+  width: 22%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+  border: 2px solid #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 14rem;
+
+  @media only screen and (max-width: 768px) {
+
+    width: 40%;
+    margin-bottom: 2rem;
+
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    width: 45%;
+
+
+  }
+
+
+
+  &__svg{
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+
+    @media only screen and (max-width: 768px) {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+  }
+
+
+  &__num{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+
+    color:$color-white;
+    letter-spacing: -2px;
+  }
+  &__p{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color:$color-white;
+    font-weight:800;
+    white-space: nowrap;
+
+
+  }
+=======
 .counter{
 
   padding: 3rem 1rem;
@@ -49,4 +110,5 @@
 
 
   }
+>>>>>>> c1990d952287f7734fb3cb6a4b6201fe30d21f30
 }

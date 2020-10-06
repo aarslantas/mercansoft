@@ -1,3 +1,97 @@
+<<<<<<< HEAD
+.comment{
+
+  width: 20%;
+  height: 21rem;
+
+
+  position: relative;
+
+  @media only screen and (max-width: 768px) {
+    width: 35%;
+    margin-bottom: 2rem;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 65%;
+
+  }
+
+
+  &__content{
+    position: absolute;
+    padding: 4rem 1rem;
+
+
+    background-color: rgba($color-white,.9);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 25% 95%,0 75%);
+
+
+    &::before{
+      content: url("../../imgs/left-quote.png");
+      opacity: .4;
+
+      transform: scale(.7);
+      position: absolute;
+
+      left: 3%;
+      top: 3%;
+    }
+
+
+  }
+
+  &__content-shadow{
+    filter: drop-shadow(-1px 6px 3px rgba(#323200, 0.5));
+  }
+  &__img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: -4px 3px 4px 3px rgba($color-black,.3);
+
+    position: absolute;
+    right: 5%;
+    top:-7%;
+    z-index: 10;
+
+  }
+
+  &__text{
+    display: block;
+
+    height: 12rem;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: rgba($color-font-1,.7);
+    // color:#676666;
+    @media only screen and (max-width: 768px) {
+     font-size: .9rem;
+    }
+
+
+  }
+
+  &__name{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: right;
+
+  }
+
+  &:nth-child(2),
+  &:nth-child(4){
+    align-self: flex-end;
+
+    @media only screen and (max-width: 768px) {
+      align-self: center;
+    }
+  }
+=======
 .comment{
 
   width: 20%;
@@ -82,4 +176,5 @@
   &:nth-child(4){
     align-self: flex-end;
   }
+>>>>>>> c1990d952287f7734fb3cb6a4b6201fe30d21f30
 }

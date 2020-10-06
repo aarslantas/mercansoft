@@ -1,3 +1,222 @@
+<<<<<<< HEAD
+.footer{
+
+
+  background-color: #ececec;
+  height: 25rem;
+
+  box-shadow: 3px 3px 10px 7px rgba(#000,.2);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+
+ @media only screen and (max-width: 1000px) {
+
+  height: 30rem;
+ }
+
+ @media only screen and (max-width: 480px) {
+
+  height: 50rem;
+  justify-content: space-between;
+  align-items: center;
+
+
+ }
+
+
+ &__top{
+  flex: 0 0 85%;
+  width: 100%;
+  padding: 0 2rem;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 480px) {
+
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 2rem 0 2rem;
+  }
+
+
+
+ }
+
+ &__top-left{
+  flex:0 0 25%;
+  height: 90%;
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+
+  @media only screen and (max-width: 480px) {
+
+   flex:1;
+
+  }
+
+ }
+
+
+
+
+
+
+
+
+ &__top-right{
+  flex: 0 0 50%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1000px) {
+
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 480px) {
+
+   flex:1;
+
+  }
+
+
+ }
+
+ &__bottom{
+  //flex: 0 0 20%;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary-light;
+
+  @media only screen and (max-width: 480px) {
+
+   flex: 0 0 10%;
+  }
+
+ }
+
+ &__container{
+  flex: 0 0 20%;
+
+  @media only screen and (max-width: 1000px) {
+
+   flex: 0 0 25%;
+  }
+
+
+
+   &:last-child{
+    flex: 0 0 35%;
+    @media only screen and (max-width: 1000px) {
+
+     flex: 0 0 45%;
+    }
+
+   }
+
+
+
+ }
+
+ &__header{
+  font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+
+
+  position: relative;
+
+ }
+ &__header-underline{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background-color: $color-primary;
+ }
+
+
+ &__list{
+
+  list-style: none;
+  line-height: 2;
+  margin-top: 1rem;
+
+
+ }
+
+ &__item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-indent: 1.5rem;
+
+
+
+  position: relative;
+
+  &::before{
+   content: url("../../imgs/sign.png");
+
+   position: absolute;
+   left: -5%;
+
+
+
+   transform: scale(.4);
+
+  }
+ }
+
+ &__link{
+  &,
+  &:link,
+  &:visited {
+   text-decoration: none;
+   //font-size: 1rem;
+   letter-spacing: 1px;
+   font-weight: 300;
+   color:$color-font-2;
+  // color: #716e6e;
+  }
+
+  &:hover,
+  &:active,
+  &:focus{
+   color: $color-primary;
+  }
+
+ }
+
+ &__copyright{
+  color:rgba($color-white,.8);
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: 1px;
+ }
+=======
 .footer{
 
 
@@ -180,4 +399,5 @@
   font-size: .8rem;
   letter-spacing: 1px;
  }
+>>>>>>> c1990d952287f7734fb3cb6a4b6201fe30d21f30
 }
